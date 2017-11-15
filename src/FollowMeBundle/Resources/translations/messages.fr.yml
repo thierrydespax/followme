@@ -1,0 +1,20 @@
+up.sign: enregistrez vous
+up.mail.addr: adresse email
+up.pswd: mot de passe
+up.validate: confirmer
+mess.mail: veuillez saisir une adresse mail
+mess.pswd: entrez un mot de passe valide
+mess.valid: entrez le même mot de passe
+mess.titre: donnez un titre svp
+mess.desc: décrivez votre sortie
+mess.start: donnez une heure de début
+mess.end: donnez une heure de fin
+mess.lat: entrez une latitude
+mess.lng: entrez une longitude
+dat.titre: titre
+dat.desc: description
+dat.start: début de l'évènement
+dat.end: fin de l'évènement
+dat.lat: latitude
+dat.lng: longitude
+in.sign: identifiez vous

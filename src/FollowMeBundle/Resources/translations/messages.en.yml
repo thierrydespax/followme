@@ -1,0 +1,8 @@
+up.sign: Sign Up
+up.mail.addr: email adress
+up.pswd: password
+up.validate: confirm
+mess.mail: please enter an email address
+mess.pswd: please enter a valid password
+mess.valid: please confirm your password
+in.sign: Sign In

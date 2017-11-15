@@ -1,0 +1,23 @@
+{% extends "@FollowMeBundle/Resources/views/base.html.twig" %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block body %}
+<h1>{{ "in.sign"|trans|capitalize }}</h1>
+
+{{ form_start(form, { "attr": {
+    "novalidate": "novalidate"
+        }
+    }) 
+}}
+
+{% include "@FollowMeBundle/Resources/Views/_form/sign_errors.html.twig" %}
+
+{% include "@FollowMeBundle/Resources/Views/_form/input/sign_in.html.twig" %}
+
+<br/>
+<div class="input-form container-fluid col-xs-10"> 
+    <button class="btn btn-success">Sign In</button>
+</div>
+{{ form_end(form) }}
+{% endblock %}

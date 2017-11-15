@@ -1,0 +1,30 @@
+{% extends "@FollowMeBundle/Resources/views/base.html.twig" %}
+
+{% block title %}Add{% endblock %}
+
+{% block body %}
+{{ form_start(form, 
+        {
+            "attr": {
+    "class": "form-horizontal",
+    "novalidate": "novalidate"
+                    }
+        }) 
+}}
+{% include "@FollowMeBundle/Resources/Views/_form/sign_errors.html.twig" %}
+{% include "@FollowMeBundle/Resources/Views/_form//input/add.html.twig" %}
+<br/>
+<br/>
+
+{% if is_granted('ROLE_SUPER_ADMIN') %}
+
+Vous etes super admin
+
+{% endif %}
+
+
+
+<button class="btn btn-success">Enregistrer</button>
+
+{{ form_end(form) }}
+{% endblock %}

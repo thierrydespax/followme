@@ -1,0 +1,16 @@
+<div class="col-xs-6">
+    <p>
+        Partagez vos idées de sortie
+    </p>    
+</div>
+
+{%  if app.session.get('id')  %}
+    <a class="btn btn-info" href="{{ path('dating') }}">Datings</a>
+    <a class="btn btn-info glyphicon glyphicon-plus" href="{{ path('add') }}">Add</a>
+{% else %}
+    <a class="btn btn-success" href="{{ path('signin') }}">Sign In</a>
+    <a class="btn btn-success" href="{{ path('signup') }}">Sign Up</a>
+{% endif %}
+<div class="col-xs-6">
+    <img src="{{ asset ('bundles/followme/images/meeting-icon-27686.png') }}" width="200" />
+</div>

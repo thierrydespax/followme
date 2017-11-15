@@ -1,0 +1,33 @@
+{% extends "@FollowMeBundle/Resources/views/base.html.twig" %}
+
+{% block title %}FollowMeBundle:Dating:index{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Dating</h1>
+
+{% for date in dating %}
+     
+ <div>                   
+    {{ date.getDatTitle() }}                
+    {{ date.getDatDescription() }}
+  </div>                  
+                    
+ {% endfor %}
+	<div class="col-xs-4 text-center">
+
+{% if page > 1 %}
+	<a href ="?page={{ page -1 }}"  class ="btn-btn-info">Precedent</a>
+{% endif %}
+
+{% if page == 1 %}
+	<a href ="?page={{ page +1 }}"  class ="btn-btn-info">Suivant</a>
+{% endif %}
+
+
+	</div>
+	<div>
+	<div class="col-xs-4-text-center">
+		{{ page }}
+	</div>	
+
+{% endblock %}
