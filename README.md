@@ -1,7 +1,9 @@
 Followme
 
 Event Management Applications
-
+It's about creating an event with a notion of date and time theme.
+You can create several events and display the list of events 
+with a management of previous pages and previous pages
 
 
 Symfony Standard Edition
